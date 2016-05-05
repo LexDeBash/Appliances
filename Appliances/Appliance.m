@@ -10,6 +10,14 @@
 
 @implementation Appliance
 
+- (instancetype)init {
+    return [self initWithProductName:@"Unknown"];
+}
+
+- (NSString *)discription {
+    return [NSString stringWithFormat:@"<%@: %d volts", self.productName, self.voltage];
+}
+
 - (instancetype)initWithProductName:(NSString *)pn {
     // Вызов метода init класса NSObject
     self = [super init];
