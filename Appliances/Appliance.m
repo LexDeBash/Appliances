@@ -10,14 +10,17 @@
 
 @implementation Appliance
 
-- (instancetype)init {
+- (instancetype)initWithProductName:(NSString *)pn {
     // Вызов метода init класса NSObject
     self = [super init];
     
     // Если метод возвращает значение, отличное от nil
     if (self) {
+        // Задаем название продукта
+        _productName = [pn copy];
+        
         // Присваиваем начальное значение вольтажа равное 120
-        [self setVoltage:120];
+        _voltage = 120;
     }
     // Возвращаем указатель на новый объект object
     return self;
