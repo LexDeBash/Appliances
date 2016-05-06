@@ -11,13 +11,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Appliance *a = [[Appliance alloc] init];
-        NSLog(@"a is %@", a);
+        Appliance *product = [[Appliance alloc] init];
+        NSLog(@"product is %@", product);
         
-        [a setProductName:@"Washing Machine"];
-        [a setVoltage:240];
-        NSLog(@"a is %@", a);
+        [product setProductName:@"Washing Machine"];
+        [product setVoltage:240];
+        NSLog(@"product is %@", product);
         
+        
+        NSString *object = [NSString stringWithFormat:@"Test"];
+        NSLog(@"%@", object);
     }
     return 0;
 }

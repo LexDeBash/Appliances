@@ -10,25 +10,25 @@
 
 @implementation Appliance
 
-- (instancetype)init {
+- (id)init {
     return [self initWithProductName:@"Unknown"];
 }
 
 - (NSString *)discription {
-    return [NSString stringWithFormat:@"<%@: %d volts", self.productName, self.voltage];
+    return [NSString stringWithFormat:@"<%@: %d volts>", self.productName, self.voltage];
 }
 
-- (instancetype)initWithProductName:(NSString *)pn {
+- (id)initWithProductName:(NSString *)pn {
     // Вызов метода init класса NSObject
     self = [super init];
     
     // Если метод возвращает значение, отличное от nil
     if (self) {
         // Задаем название продукта
-        _productName = [pn copy];
+        [self setProductName:pn];
         
         // Присваиваем начальное значение вольтажа равное 120
-        _voltage = 120;
+        [self setVoltage:120];
     }
     // Возвращаем указатель на новый объект object
     return self;
