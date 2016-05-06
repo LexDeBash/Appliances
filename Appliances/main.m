@@ -18,9 +18,6 @@ int main(int argc, const char * argv[]) {
         [product setVoltage:240];
         NSLog(@"product is %@", product);
         
-        
-        NSString *object = [NSString stringWithFormat:@"Test"];
-        NSLog(@"%@", object);
     }
     return 0;
 }
