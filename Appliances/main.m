@@ -16,8 +16,7 @@ int main(int argc, const char * argv[]) {
         
         [product setProductName:@"Washing Machine"];
         [product setVoltage:240];
-        NSLog(@"product is %@", product);
-        
+        NSLog(@"product is %@", product);        
     }
     return 0;
 }

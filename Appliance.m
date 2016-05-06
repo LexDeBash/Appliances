@@ -14,8 +14,8 @@
     return [self initWithProductName:@"Unknown"];
 }
 
-- (NSString *)discription {
-    return [NSString stringWithFormat:@"<%@: %d volts>", self.productName, self.voltage];
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<Product name is %@: %d volts", _productName, _voltage];
 }
 
 - (id)initWithProductName:(NSString *)pn {
