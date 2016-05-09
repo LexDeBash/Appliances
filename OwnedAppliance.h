@@ -12,9 +12,10 @@
 
 @property (readonly) NSSet *ownerNames;
 
+// Основой инициализатор
 - (id)initWithProductName:(NSString *)pn
            firstOwnerName:(NSString *)n;
-- (void)addOwnerNamesObject:(NSString *)n;
-- (void)removeOwnerNamesObject:(NSString *)n;
+- (void)addOwnerName:(NSString *)n;
+- (void)removeOwnerName:(NSString *)n;
 
 @end

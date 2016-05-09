@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *productName;
 @property (nonatomic) int voltage;
+
+// Основной инициализатор
 - (id)initWithProductName:(NSString *)pn;
 
 @end
