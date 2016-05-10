@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Appliance : NSObject
+@interface Appliance : NSObject {
+    NSString *productName;
+}
 
-@property (nonatomic, copy) NSString *productName;
+//@property (nonatomic, copy) NSString *productName;
 @property (nonatomic) int voltage;
 
 // Основной инициализатор
